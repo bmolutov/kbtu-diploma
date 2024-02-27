@@ -1,0 +1,17 @@
+Nmap
+
+1. `nmap -p80,443 demo.testfire.net`
+   - This command scans for open ports 80 (HTTP) and 443 (HTTPS) on the target host, which are commonly used for web applications.
+
+2. `nmap --script=http-enum demo.testfire.net`
+   - This command runs Nmap scripts to enumerate various information about the web server, such as supported methods, directories, and files.
+
+3. `nmap --script=http-methods demo.testfire.net`
+   - This command detects the HTTP methods supported by the web server, such as GET, POST, PUT, DELETE, etc.
+
+4. `nmap --script=http-headers demo.testfire.net`
+   - This command retrieves HTTP headers from the web server, providing information about the server software, supported technologies, and potentially sensitive data.
+
+5. `nmap --script http-csrf demo.testfire.net`
+   - This command checks for Cross-Site Request Forgery (CSRF) vulnerabilities in web applications, which could allow attackers to execute unauthorized actions on behalf of authenticated users.
+
